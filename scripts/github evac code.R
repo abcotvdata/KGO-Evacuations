@@ -1,4 +1,3 @@
-library(tidycensus)
 library(tidyverse)
 library(janitor)
 library(readxl)
