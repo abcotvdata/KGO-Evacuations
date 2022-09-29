@@ -18,7 +18,7 @@ jobs:
         run: |
           brew install gdal
       - name: Install dependencies and packages
-        run: Rscript -e 'install.packages(c("tidyverse","janitor","readxl","jsonlite","googlesheets4","googledrive","htmlwidgets", "htmltools","data.table","fontawesome", "tidycensus"))'
+        run: Rscript -e 'install.packages(c("tidyverse","janitor","readxl","jsonlite","googlesheets4","googledrive","htmlwidgets", "htmltools","data.table","fontawesome"))'
       - name: Get data from google sheets
         run: Rscript scripts/github evac code.R
       - name: Commit results
