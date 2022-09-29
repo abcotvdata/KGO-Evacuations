@@ -1,0 +1,28 @@
+on:
+    schedule:
+     - cron: '5 6 * * 5'
+    workflow_dispatch:
+
+name: evacuation tables
+  
+jobs:
+  render:
+    name: Pull latest evacuations, update tables
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v1
+      - name: Set up pandoc for Rmd docs
+        uses: r-lib/actions/setup-pandoc@v1
+      - name: Install gdal
+        run: |
+          brew install gdal
+      - name: Install dependencies and packages
+        run: Rscript -e 'install.packages(c("tidyverse","janitor","readxl","jsonlite","googlesheets4","googledrive","htmlwidgets", "htmltools","data.table","fontawesome", "tidycensus"))'
+      - name: Get data from google sheets
+        run: Rscript scripts/github evac code.R
+      - name: Commit results
+        run: |
+          git add -A
+          git commit -m 'Update evac tables' || echo "No changes"
+          git push origin || echo "No changes to commit"
