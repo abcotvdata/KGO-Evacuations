@@ -26,7 +26,7 @@ jobs:
           name: "google_service_account.json"
           json: ${{ secrets.GOOGLE_JSON }}
       - name: Get data from google sheets
-        run: Rscript scripts/github evac code.R
+        run: Rscript scripts/github_evac_code.R
       - name: Commit results
         run: |
           git add -A
