@@ -9,7 +9,7 @@ library(data.table)
 library(htmltools)
 library(fontawesome)
 
-# google authentication
+# google authentication 
 
 drive_auth(path = "google_service_account.json")
 gs4_auth(path = "google_service_account.json")
