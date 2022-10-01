@@ -19,6 +19,12 @@ jobs:
           brew install gdal
       - name: Install dependencies and packages
         run: Rscript -e 'install.packages(c("tidyverse","janitor","readxl","jsonlite","googlesheets4","googledrive","htmlwidgets", "htmltools","data.table","fontawesome"))'
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: "google_service_account.json"
+          json: ${{ secrets.GOOGLE_JSON }}
       - name: Get data from google sheets
         run: Rscript scripts/github evac code.R
       - name: Commit results
