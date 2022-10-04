@@ -4,6 +4,9 @@ on:
     workflow_dispatch:
 
 name: evacuation tables
+
+env:
+  GOOGLE_JSON: ${{ secrets.GOOGLE_JSON }}
   
 jobs:
   render:
