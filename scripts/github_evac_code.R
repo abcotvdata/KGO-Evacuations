@@ -11,8 +11,8 @@ library(fontawesome)
 
 # google authentication 
 
-#drive_auth(path = "google_service_account.json")
-#gs4_auth(path = "google_service_account.json")
+drive_auth(path = "GOOGLE_JSON")
+gs4_auth(path = "google_service_account.json")
 
 # loading in each google sheet and adding county + state columns
 
