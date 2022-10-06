@@ -7,6 +7,7 @@ name: evacuation tables
 
 env:
   GOOGLE_JSON: ${{ secrets.GOOGLE_JSON }}
+  GS_API: ${{ secrets.GS_API }}
   
 jobs:
   render:
