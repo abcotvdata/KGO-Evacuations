@@ -29,11 +29,11 @@ jobs:
           name: "google_service_account.json"
           json: ${{ secrets.GOOGLE_JSON }}
       - name: Create file
-        run: cat /home/runner/work/KGO-Evacuations/app/google-services.json | base64
+        run: cat /Users/runner/work/_temp/Library/google-services.json | base64
       - name: Putting data
         env:
             DATA: ${{ secrets.GOOGLE_JSON }}
-        run: echo $DATA > /home/runner/work/KGO-Evacuations/app/google-services.json
+        run: echo $DATA > /Users/runner/work/_temp/Library/google-services.json
       - name: Get data from google sheets
         run: Rscript scripts/github_evac_code.R
       - name: Commit results
