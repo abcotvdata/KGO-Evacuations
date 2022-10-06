@@ -18,7 +18,7 @@ library(fontawesome)
 
 # loading in each google sheet and adding county + state columns
 
-alameda <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=0", sheet = "Alameda")
+alameda <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=0", sheet = "Alameda", token = gs4_token(GS_API))
 
 alameda['County'] = 'Alameda'
 alameda['State'] = 'California'
