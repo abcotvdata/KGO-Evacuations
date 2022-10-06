@@ -9,7 +9,9 @@ library(data.table)
 library(htmltools)
 library(fontawesome)
 
-# google authentication 
+# google authentication
+
+GOOGLE_JSON <- Sys.getenv("GOOGLE_JSON")
 
 drive_auth(token = "GOOGLE_JSON")
 #gs4_auth(path = "google_service_account.json")
