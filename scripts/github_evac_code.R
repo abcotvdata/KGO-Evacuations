@@ -13,8 +13,10 @@ library(fontawesome)
 
 #GOOGLE_JSON <- Sys.getenv("GOOGLE_JSON")
 
+drive_auth(cache = ".secrets")
+
 #drive_auth(token = GOOGLE_JSON)
-drive_auth(path = "/Users/runner/work/KGO-Evacuations/KGO-Evacuations/google_service_account.json")
+#drive_auth(path = "/Users/runner/work/KGO-Evacuations/KGO-Evacuations/google_service_account.json")
 #gs4_auth(token = GS_API)
 
 # loading in each google sheet and adding county + state columns
