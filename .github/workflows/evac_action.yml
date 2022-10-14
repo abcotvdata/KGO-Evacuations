@@ -37,6 +37,8 @@ jobs:
             DATA: ${{ secrets.GOOGLE_JSON }}
         run: echo $DATA > google-services.json
       - name: Get data from google sheets
+        env:
+            credentials: ${{ secrets.GOOGLE_JSON }}
         run: Rscript scripts/github_evac_code.R
       - name: Commit results
         run: |
