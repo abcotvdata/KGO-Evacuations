@@ -36,9 +36,6 @@ jobs:
         env:
             DATA: ${{ secrets.GOOGLE_JSON }}
         run: echo $DATA > google-services.json
-      - name: Credentials
-        with: 
-           credentials: ${{ secrets.GOOGLE_JSON }}
       - name: Get data from google sheets
         env:
             credentials: ${{ secrets.GOOGLE_JSON }}
