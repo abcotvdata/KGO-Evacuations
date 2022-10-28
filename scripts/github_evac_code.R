@@ -19,57 +19,57 @@ library(fontawesome)
 
 # loading in each google sheet and adding county + state columns
 
-alameda <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=0", sheet = "Alameda")
+alameda <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=0", sheet = "Alameda")
 
 alameda['County'] = 'Alameda'
 alameda['State'] = 'California'
 
-contra_costa <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=1620495568", sheet = "Contra Costa")
+contra_costa <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=1620495568", sheet = "Contra Costa")
 
 contra_costa['County'] = 'Contra Costa'
 contra_costa['State'] = 'California'
 
-lake <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=800178297", sheet = "Lake")
+lake <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=800178297", sheet = "Lake")
 
 lake['County'] = 'Lake'
 lake['State'] = 'California'
 
-marin <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=368196789", sheet = "Marin")
+marin <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=368196789", sheet = "Marin")
 
 marin['County'] = 'Marin'
 marin['State'] = 'California'
 
-merced <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=878671387", sheet = "Merced")
+merced <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=878671387", sheet = "Merced")
 
 merced['County'] = 'Merced'
 merced['State'] = 'California'
 
-napa <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=71542859", sheet = "Napa")
+napa <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=71542859", sheet = "Napa")
 
 napa['County'] = 'Napa'
 napa['State'] = 'California'
 
-san_mateo <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=1836818617", sheet = "San Mateo")
+san_mateo <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=1836818617", sheet = "San Mateo")
 
 san_mateo['County'] = 'San Mateo'
 san_mateo['State'] = 'California'
 
-santa_clara <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=2115273005", sheet = "Santa Clara")
+santa_clara <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=2115273005", sheet = "Santa Clara")
 
 santa_clara['County'] = 'Santa Clara'
 santa_clara['State'] = 'California'
 
-santa_cruz <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=1378970754", sheet = "Santa Cruz")
+santa_cruz <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=1378970754", sheet = "Santa Cruz")
 
 santa_cruz['County'] = 'Santa Cruz'
 santa_cruz['State'] = 'California'
 
-solano <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=282322297", sheet = "Solano")
+solano <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=282322297", sheet = "Solano")
 
 solano['County'] = 'Solano'
 solano['State'] = 'California'
 
-sonoma <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/edit#gid=583273920", sheet = "Sonoma")
+sonoma <- read_sheet("https://docs.google.com/spreadsheets/d/1yUNrLhrJ1ijTqHlde_6Ls4HV0YgodL80vKDa-ddCn-Q/gviz/tq?tqx=out:csv&gid=583273920", sheet = "Sonoma")
 
 sonoma['County'] = 'Sonoma'
 sonoma['State'] = 'California'
