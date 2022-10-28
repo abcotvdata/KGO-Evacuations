@@ -8,6 +8,7 @@ library(htmlwidgets)
 library(data.table)
 library(htmltools)
 library(fontawesome)
+library(DT)
 
 # google authentication
 
