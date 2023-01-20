@@ -915,6 +915,10 @@ background: none;
 table.dataTable {
 display: table;
 }
+
+.html-fill-container > .html-fill-item.datatables {
+flex-basis: 400px;
+}
 </style>
 <script>(function() {
 
@@ -1767,7 +1771,7 @@ HTMLWidgets.widget({
 
           if (immediate) $input.on('blur', function(e) {
             var valueNew = $input.val();
-            if (valueNew != value) {
+            if (valueNew !== value) {
               _cell.data(valueNew);
               if (HTMLWidgets.shinyMode) {
                 changeInput('cell_edit', [cellInfo(cell)], 'DT.cellInfo', null, {priority: 'event'});
@@ -2694,9 +2698,9 @@ padding-top: 0px!important;
 </head>
 <body style="background-color: white;">
 <div id="htmlwidget_container">
-  <div id="htmlwidget-98602a53cd00e07c6063" style="width:100%;height:auto;" class="datatables html-widget "></div>
+  <div id="htmlwidget-17c516d2a337ddbfad1b" style="width:100%;height:auto;" class="datatables html-widget "></div>
 </div>
-<script type="application/json" data-for="htmlwidget-98602a53cd00e07c6063">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns"],"data":[[],[]],"container":"<table class=\"hover table-bordered table-condensed cell-border\">\n  <thead>\n    <tr>\n      <th>Type<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":15,"language":{"searchPlaceholder":"Enter your location","lengthMenu":"_MENU_","dom":"tr","zeroRecords":" "},"fixedColumns":{"leftColumns":1},"lengthChange":false,"scrollX":true,"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});\n}","columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-98602a53cd00e07c6063">{"viewer":{"width":"100%","height":"auto","padding":15,"fill":false},"browser":{"width":"100%","height":"auto","padding":40,"fill":false}}</script>
+<script type="application/json" data-for="htmlwidget-17c516d2a337ddbfad1b">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns"],"data":[[],[]],"container":"<table class=\"hover table-bordered table-condensed cell-border\">\n  <thead>\n    <tr>\n      <th>Type<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":15,"language":{"searchPlaceholder":"Enter your location","lengthMenu":"_MENU_","dom":"tr","zeroRecords":" "},"fixedColumns":{"leftColumns":1},"lengthChange":false,"scrollX":true,"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});\n}","columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-17c516d2a337ddbfad1b">{"viewer":{"width":"100%","height":"auto","padding":15,"fill":false},"browser":{"width":"100%","height":"auto","padding":40,"fill":false}}</script>
 </body>
 </html>
