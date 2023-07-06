@@ -83,7 +83,7 @@ sonoma['State'] = 'California'
 alameda1 <- alameda %>%
   select("Type", "Description")
 
-alameda_table <- DT::datatable(alameda1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+alameda_table <- DT::datatable(alameda1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
