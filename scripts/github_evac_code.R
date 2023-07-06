@@ -106,7 +106,7 @@ saveWidget(alameda_table1, 'alameda_table.html', selfcontained = TRUE)
 contra_costa1 <- contra_costa %>%
   select("Type", "Description")
 
-contra_costa_table <- DT::datatable(contra_costa1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+contra_costa_table <- DT::datatable(contra_costa1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -128,7 +128,7 @@ saveWidget(contra_costa_table1, 'contra_costa_table.html', selfcontained = TRUE)
 lake1 <- lake %>%
   select("Type", "Description")
 
-lake_table <- DT::datatable(lake1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+lake_table <- DT::datatable(lake1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -150,7 +150,7 @@ saveWidget(lake_table1, 'lake_table.html', selfcontained = TRUE)
 marin1 <- marin %>%
   select("Type", "Description")
 
-marin_table <- DT::datatable(marin1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+marin_table <- DT::datatable(marin1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -172,7 +172,7 @@ saveWidget(marin_table1, 'marin_table.html', selfcontained = TRUE)
 merced1 <- merced %>%
   select("Type", "Description")
 
-merced_table <- DT::datatable(merced1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+merced_table <- DT::datatable(merced1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -194,7 +194,7 @@ saveWidget(merced_table1, 'merced_table.html', selfcontained = TRUE)
 napa1 <- napa %>%
   select("Type", "Description")
 
-napa_table <- DT::datatable(napa1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+napa_table <- DT::datatable(napa1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -216,7 +216,7 @@ saveWidget(napa_table1, 'napa_table.html', selfcontained = TRUE)
 san_mateo1 <- san_mateo %>%
   select("Type", "Description")
 
-san_mateo_table <- DT::datatable(san_mateo1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+san_mateo_table <- DT::datatable(san_mateo1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -238,7 +238,7 @@ saveWidget(san_mateo_table1, 'san_mateo_table.html', selfcontained = TRUE)
 santa_clara1 <- santa_clara %>%
   select("Type", "Description")
 
-santa_clara_table <- DT::datatable(santa_clara1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+santa_clara_table <- DT::datatable(santa_clara1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -260,7 +260,7 @@ saveWidget(santa_clara_table1, 'santa_clara_table.html', selfcontained = TRUE)
 santa_cruz1 <- santa_cruz %>%
   select("Type", "Description")
 
-santa_cruz_table <- DT::datatable(santa_cruz1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+santa_cruz_table <- DT::datatable(santa_cruz1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -282,7 +282,7 @@ saveWidget(santa_cruz_table1, 'santa_cruz_table.html', selfcontained = TRUE)
 solano1 <- solano %>%
   select("Type", "Description")
 
-solano_table <- DT::datatable(solano1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+solano_table <- DT::datatable(solano1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -304,7 +304,7 @@ saveWidget(solano_table1, 'solano_table.html', selfcontained = TRUE)
 sonoma1 <- sonoma %>%
   select("Type", "Description")
 
-sonoma_table <- DT::datatable(sonoma1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+sonoma_table <- DT::datatable(sonoma1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
@@ -328,7 +328,7 @@ all_evacs <- rbind(alameda, contra_costa, lake, marin, merced, napa, san_mateo, 
 all_evacs1 <- all_evacs %>%
   select("Type", "Description", "County")
 
-all_evacs_table <- DT::datatable(all_evacs1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), fixedColumns = list(leftColumns = 1), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
+all_evacs_table <- DT::datatable(all_evacs1, width = "100%", height = NULL, rownames = FALSE, class = 'hover table-bordered table-condensed cell-border', extensions = "FixedColumns", options = list(pageLength = 15, language = list(searchPlaceholder = "Enter your location", lengthMenu = "_MENU_", dom = 'tr', zeroRecords = " "), lengthChange = FALSE, scrollX = TRUE,  initComplete = JS(
   "function(settings, json) {",
   "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
   "}")
