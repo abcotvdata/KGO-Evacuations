@@ -1415,7 +1415,9 @@ HTMLWidgets.widget({
               $input.parent().hide(); $x.show().trigger('show'); filter[0].selectize.focus();
             },
             input: function() {
-              if ($input.val() === '') filter[0].selectize.setValue([]);
+              var v1 = JSON.stringify(filter[0].selectize.getValue()), v2 = $input.val();
+              if (v1 === '[]') v1 = '';
+              if (v1 !== v2) filter[0].selectize.setValue(v2 === '' ? [] : JSON.parse(v2));
             }
           });
           var $input2 = $x.children('select');
@@ -2320,7 +2322,7 @@ HTMLWidgets.widget({
           console.log('The search keyword for column ' + i + ' is undefined')
           return;
         }
-        $(td).find('input').first().val(v);
+        $(td).find('input').first().val(v).trigger('input');
         searchColumn(i, v);
       });
       table.draw();
@@ -2475,9 +2477,9 @@ padding-top: 0px!important;
 </head>
 <body style="background-color: white;">
 <div id="htmlwidget_container">
-  <div id="htmlwidget-21920782fe74004fb4d8" style="width:100%;height:auto;" class="datatables html-widget "></div>
+  <div id="htmlwidget-b2e24b816b7ab348b918" style="width:100%;height:auto;" class="datatables html-widget "></div>
 </div>
-<script type="application/json" data-for="htmlwidget-21920782fe74004fb4d8">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns"],"data":[[],[]],"container":"<table class=\"hover table-bordered table-condensed cell-border\">\n  <thead>\n    <tr>\n      <th>Type<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":15,"language":{"searchPlaceholder":"Enter your location","lengthMenu":"_MENU_","dom":"tr","zeroRecords":" "},"lengthChange":false,"scrollX":true,"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});\n}","columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-21920782fe74004fb4d8">{"viewer":{"width":"100%","height":"auto","padding":15,"fill":false},"browser":{"width":"100%","height":"auto","padding":40,"fill":false}}</script>
+<script type="application/json" data-for="htmlwidget-b2e24b816b7ab348b918">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns"],"data":[[],[]],"container":"<table class=\"hover table-bordered table-condensed cell-border\">\n  <thead>\n    <tr>\n      <th>Type<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":15,"language":{"searchPlaceholder":"Enter your location","lengthMenu":"_MENU_","dom":"tr","zeroRecords":" "},"lengthChange":false,"scrollX":true,"initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});\n}","columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-b2e24b816b7ab348b918">{"viewer":{"width":"100%","height":"auto","padding":15,"fill":false},"browser":{"width":"100%","height":"auto","padding":40,"fill":false}}</script>
 </body>
 </html>
